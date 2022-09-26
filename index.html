@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="css/slicy.css" />
+	<link rel="stylesheet" href="css/swiper.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+	<link rel="stylesheet" href="js/toaster/toast.style.css">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5Y6LQQEQNS"></script>
+	<script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-5Y6LQQEQNS');</script>
+</head>
+
+<body style="background: #fafbfc;">
+	<div class="layout">
+		<div class="header">
+			<div class="wrap">
+				<div class="gh">
+					<a href="javascript:;"></a>
+				</div>
+				<div class="lt">
+					<a href="index.html" class="logo"><img src="images/logo.png"></a>
+					<div class="naver">
+						<ul>
+							<li class="on"><a href="index.html">首页</a></li>
+							<li><a href="dashboard.html">数据</a></li>
+							<li><a href="pool.html">分红池</a></li>
+							<li><a href="ads.html">发布广告</a></li>
+							<li><a href="account.html">我的收益</a></li>
+							<li><a href="https://sunswap.com/#/v2?lang=zh-CN&t0=TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t&t1=TSo7b9eDcnbALh1sqdqkBr6MNgkvQ8EBvX&type=swap"
+									target="_blank">交易</a></li>
+							<li><a href="https://ad-dao.gitbook.io/help/" target="_blank">帮助</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="item">
+					<div class="btn">
+						<div id="btn-connect"> 连接钱包</div>
+						<div id="btn-disconnect" style="display: none;"><span id="selected-account">加载中...</span></div>
+					</div>
+					<div class="icon"><span class="arrow"></span></div>
+				</div>
+			</div>
+			<div class="item-menu">
+				<div class="item-sub add">添加 ADC 到 TronLink</div>
+				<div class="item-sub view"><a href="javascript:void(0);" target="_blank">查看智能合约地址</a></div>
+			</div>
+		</div>
+		<div class="hhpage">
+			<div class="hbanner">
+				<div class="wrap">
+					<div class="txt">
+						<h3><i>这是一个</i><br />区块链广告平台 免费发广告赚钱</h3>
+						<h6 class="s1"><span>随心所欲发布任何广告，享受平台收益</span></h6>
+						<h6 class="s2"><span>公平分红，去中心化共同治理</span></h6>
+						<h6 class="s3"><span class="nr">ADC价格：<span id="tokenPrice">-</span></span></h6>
+					</div>
+					<video class='video' controls='' poster='images/qm6.jpg' preload='' x5-playsinline='' playsinline=''
+						webkit-playsinline=''>
+						<source src='images/map.mp4' type='video/mp4'>
+					</video>
+				</div>
+			</div>
+			<div class="ipage">
+				<div class="wrap">
+					<div class="tps">
+						<h2>
+							<span>热门关键词</span>
+							<span class="sub myad">我的广告</span>
+							<span class="sub allad">全部广告</span>
+						</h2>
+						<ul class="keyList">
+						</ul>
+					</div>
+					<div class="boxs">
+						<div class="bds">
+							<ul class="clearfix">
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="loading" id="load">上拉加载更多</div>
+	</div>
+
+	<div class="mask"></div>
+
+	<!-- 视频 -->
+	<div class="makvideo">
+		<video class='video' controls='' poster='' preload='' x5-playsinline='' playsinline='' webkit-playsinline=''>
+			<source src='' type='video/mp4'>
+		</video>
+		<div class="icos"></div>
+	</div>
+
+	<!-- 幻灯片 -->
+	<div class="masswipban">
+		<div class='banner'>
+			<ul class='swiper-wrapper'>
+
+			</ul>
+			<!--
+			<div class='prev'></div>
+			<div class='next'></div>
+			<div class="spot"></div>
+			-->
+		</div>
+		<div class="icos"></div>
+	</div>
+
+	<script src="js/lib/jquery-1.7.2.min.js"></script>
+	<script src="js/lib/swiper.min.js"></script>
+	<script src="js/lib/wow.min.js"></script>
+	<script src="js/toaster/toast.script.js"></script>
+	<script src="js/lib/jToast.js"></script>
+
+	<script type="text/javascript" src="js/tron/TronWeb.js"></script>
+	<script type="text/javascript" src='js/tron/bignumber.min.js'></script>
+
+	<script type="text/javascript" src="js/tronjs/index.js"></script>
+</body>
+
+</html>

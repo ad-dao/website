@@ -1,0 +1,1255 @@
+/*pad*/
+
+img {
+  max-width: 100%;
+}
+
+.gh {
+  height: 28px;
+  width: 28px;
+  position: absolute;
+  transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+  -webkit-transition: all 0.5s cubic-bmezier(0.7, 0, 0.3, 1) 0s;
+  -ms-transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+  cursor: pointer;
+  z-index: 9999;
+  display: none;
+}
+
+.selected .gh {
+  transform: rotate(90deg);
+}
+
+.gh a {
+  background-color: #010101;
+  display: block;
+  margin: 0 auto;
+  height: 2px;
+  margin-top: -1px;
+  position: relative;
+  top: 50%;
+  transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+  -webkit-transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+  -ms-transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+  width: 18px;
+  border-radius: 2px;
+}
+
+.gh a:after {
+  width: 28px;
+}
+
+.gh a:before {
+  width: 28px;
+}
+
+.gh a:after,
+.gh a:before {
+  background-color: #010101;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+  -webkit-transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+  -ms-transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+}
+
+.gh a:after {
+  top: 7px;
+}
+
+.gh a:before {
+  top: -7px;
+}
+
+.selected .gh a:after,
+.selected .gh a:before {
+  top: 0;
+}
+
+.selected .gh a:before {
+  transform: translateY(0px) rotate(-45deg);
+  -webkit-transform: translateY(0px) rotate(-45deg);
+  -ms-transform: translateY(0px) rotate(-45deg);
+  background: #010101;
+  width: 100%;
+}
+
+.selected .gh a:after {
+  transform: translateY(0px) rotate(45deg);
+  -webkit-transform: translateY(0px) rotate(45deg);
+  -ms-transform: translateY(0px) rotate(45deg);
+  background: #010101;
+  width: 100%;
+}
+
+.selected .gh a {
+  background-color: transparent !important;
+}
+
+@media only screen and (max-width: 1680px) {
+  .hbanner .txt {
+    padding-left: 80px;
+  }
+}
+
+@media only screen and (max-width: 1480px) {
+  .wrap {
+    width: 1200px;
+  }
+
+  .ipage .boxs .bds li {
+    padding: 70px 30px 0 30px;
+    height: 318px;
+  }
+
+  .ipage .boxs .bds li h3 a {
+    font-size: 20px;
+  }
+
+  .ipage .boxs .bds li p {
+    margin: 10px 0;
+    line-height: 24px;
+    /* height: 48px; */
+    min-height: 48px;
+    font-size: 14px;
+  }
+
+  .ipage .boxs .bds li dd a,
+  .ipage .boxs .bds li h6 a {
+    font-size: 14px;
+  }
+
+  .ipage .boxs .bds li h6 span {
+    color: #9a9a9a;
+    cursor: pointer;
+  }
+
+  .ipage .boxs .bds li .pic {
+    width: 78px;
+    height: 78px;
+  }
+
+  .ipage .tps li a {
+    font-size: 16px;
+  }
+
+  .hbanner .video {
+    width: 450px;
+    height: 280px;
+  }
+
+  .ipage .tps h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .pool .box .hd dd h5 span,
+  .pool .box .hd dd h5,
+  .pool .box .hd dd h4 {
+    font-size: 48px;
+  }
+
+  .pool .box .hd dd h6 {
+    margin-bottom: 20px;
+  }
+
+  .pool .box .hd dd h5 img {
+    width: 180px;
+  }
+
+  .pool .box .hd dl {
+    align-items: initial;
+  }
+
+  .pool .box .hd {
+    padding-bottom: 50px;
+  }
+
+  .account .boxs .txt p {
+    line-height: 2;
+    padding-left: 30px;
+  }
+
+  .pool .box .txt p {
+    line-height: 2;
+    margin-left: 20px;
+  }
+
+  .pool .box .table h3 {
+    font-size: 22px;
+  }
+
+  .dashboard .box .hd li h4 {
+    font-size: 30px;
+  }
+
+  .dashboard .box .table h3 {
+    font-size: 22px;
+  }
+
+  .account .boxs dd h4,
+  .account .box dd h4 {
+    font-size: 30px;
+  }
+
+  .account .box .lt {
+    width: calc((100% - 20px) / 2);
+  }
+
+  .adsgg .box .bds .table2 {
+    box-shadow: 0 0 8px 0 rgba(80, 80, 80, 0.2);
+  }
+
+  .adsgg .box .bds .table1 {
+    overflow-x: scroll;
+  }
+
+  .adsgg .box .bds .table1 table {
+    min-width: 1300px;
+  }
+
+  .pool .box .hd dd {
+    margin: 0 40px;
+  }
+
+  .hhpage::before {
+    height: 60vh;
+  }
+
+  .hbanner .txt h3 {
+    font-size: 40px;
+  }
+
+  .hbanner .txt h6 span {
+    font-size: 24px;
+  }
+
+  .hbanner .txt h6 {
+    margin-bottom: 22px;
+  }
+
+  .ipage {
+    margin-top: 40px;
+  }
+
+  .hbanner .txt h6 span {
+    line-height: 40px;
+  }
+
+  .hbanner .txt h6 {
+    margin-bottom: 16px;
+  }
+
+  .ipage .boxs .bds li h5 {
+    font-size: 16px;
+    top: 30px;
+  }
+}
+
+@media only screen and (max-width: 1240px) {
+  .wrap {
+    width: 1000px;
+  }
+
+  .header .naver li a {
+    font-size: 16px;
+    padding: 0 16px;
+    line-height: 30px;
+  }
+
+  .header .btn {
+    width: 110px;
+  }
+
+  .header .item {
+    width: auto;
+    display: flex;
+  }
+
+  .account .boxs dd h4,
+  .account .box dd h4 {
+    font-size: 22px;
+  }
+
+  .account .box dd h6 {
+    font-size: 14px;
+  }
+
+  .account .box dd h4 i {
+    font-size: 12px;
+  }
+
+  .account .box .btn {
+    /* width: 120px; */
+    line-height: 36px;
+  }
+
+  .account .boxs dl {
+    padding: 0 40px;
+  }
+
+  .account .boxs dd h6 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .account .boxs dd .hs {
+    font-size: 16px;
+  }
+
+  .account .boxs dd .t1 {
+    width: 280px;
+  }
+
+  .account .boxs {
+    margin-top: 20px;
+  }
+
+  .account .boxs .txt h5 {
+    font-size: 14px;
+  }
+
+  .account .boxs .txt p {
+    font-size: 14px;
+  }
+
+  .dashboard .box .hd li h6 {
+    font-size: 14px;
+  }
+
+  .dashboard .box .hd li h4 {
+    font-size: 22px;
+    margin: 5px 0;
+  }
+
+  .dashboard .box {
+    margin-bottom: 20px;
+  }
+
+  .dashboard .box .table h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .dashboard .box .table table td:nth-child(1),
+  .dashboard .box .table table th:nth-child(1) {
+    padding-left: 20px;
+  }
+
+  .pool .box .hd dd h6 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .pool .box .hd dd h5 span,
+  .pool .box .hd dd h5,
+  .pool .box .hd dd h4 {
+    font-size: 30px;
+  }
+
+  .pool .box .hd dd h4 i {
+    font-size: 18px;
+  }
+
+  .pool .box .hd {
+    padding-bottom: 30px;
+  }
+
+  .pool .box .txt p {
+    font-size: 14px;
+  }
+
+  .pool .box .txt .pic {
+    width: 370px;
+  }
+
+  .pool .box .txt .lt {
+    width: calc(100% - 390px);
+  }
+
+  .pool .box .table h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .pool .box .table table td:nth-child(1),
+  .pool .box .table table th:nth-child(1) {
+    padding-left: 20px;
+  }
+
+  .ipage .tps h2 {
+    font-size: 24px;
+  }
+
+  .ipage .tps li a {
+    font-size: 14px;
+    padding: 0 12px;
+    line-height: 32px;
+  }
+
+  .ipage .boxs .bds li {
+    padding: 55px 24px 0;
+    height: 255px;
+  }
+
+  .ipage .boxs .bds li h3 a {
+    font-size: 16px;
+  }
+
+  .ipage .boxs .bds li p {
+    font-size: 12px;
+    line-height: 20px;
+    /* height: 40px; */
+    min-height: 40px;
+    margin: 5px 0;
+  }
+
+  .ipage .boxs .bds li dd a,
+  .ipage .boxs .bds li h6 a {
+    font-size: 12px;
+  }
+
+  .ipage .boxs .bds li h6 span {
+    color: #9a9a9a;
+    cursor: pointer;
+  }
+
+  .ipage .boxs .bds li dd {
+    background-size: 26px auto !important;
+    width: 74px;
+  }
+
+  .ipage .boxs .bds li dd a {
+    padding-left: 32px;
+  }
+
+  .ipage .boxs .bds li .pic {
+    width: 60px;
+    height: 60px;
+  }
+
+  .ipage .boxs .bds li {
+    margin-bottom: 30px;
+  }
+
+  .hbanner .txt h3 {
+    font-size: 34px;
+  }
+
+  .hbanner .txt .i {
+    font-size: 24px;
+  }
+
+  .hbanner .txt h6 span {
+    font-size: 22px;
+    line-height: 44px;
+  }
+
+  .hbanner .txt h6 {
+    margin-bottom: 20px;
+  }
+
+  .hhpage::before {
+    height: 54vh;
+  }
+
+  .hbanner .txt {
+    padding-left: 40px;
+  }
+
+  .hbanner .txt h3 {
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  .hbanner .txt h6.s1 {
+    margin-top: 20px;
+  }
+
+  .hbanner .txt h6 span {
+    line-height: 36px;
+  }
+
+  .ipage .boxs .bds li h5 {
+    font-size: 14px;
+    top: 20px;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .wrap {
+    width: auto;
+    padding: 0 15px;
+  }
+
+  .header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 88;
+    height: 50px;
+  }
+
+  .layout {
+    padding-top: 50px;
+  }
+
+  .gh {
+    position: absolute;
+    left: 20px;
+    top: 12px;
+    z-index: 1;
+    display: block;
+  }
+
+  .header .lt {
+    display: block;
+  }
+
+  .header .logo {
+    text-align: center;
+    margin: 6px auto 0;
+    max-width: 110px;
+  }
+
+  .header .naver {
+    margin-left: 0;
+    position: fixed;
+    z-index: 111;
+    top: 50px;
+    left: 0;
+    margin: 0 auto;
+    display: none;
+    background: #fff;
+    min-height: 100%;
+    transition: all 0.4s;
+    width: 130px;
+  }
+
+  .header .naver li {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .header .naver li a {
+    padding: 0 0 0 20px;
+    line-height: 40px;
+    border: initial;
+    border-radius: initial;
+  }
+
+  .header .naver li.on a,
+  .header .naver li a:hover {
+    border: initial;
+    border-radius: initial;
+    background: #fff9e4;
+  }
+
+  .header .btn {
+    line-height: 26px;
+    font-size: 12px;
+  }
+
+  .header .item {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    z-index: 1;
+  }
+
+  .header .item .icon .arrow {
+    margin-top: 40%;
+  }
+
+  .header .wrap {
+    display: block;
+    height: auto;
+  }
+
+  .hbanner {
+    height: auto;
+  }
+
+  .hbanner .video {
+    height: 175px;
+    margin: 110px 0 0;
+    width: 100%;
+    position: static;
+    border-radius: 20px;
+  }
+
+  .ipage {
+    padding: 15px 0 40px;
+  }
+
+  .ipage .tps h2 {
+    font-size: 18px;
+  }
+
+  .ipage .tps li a {
+    font-size: 12px;
+    text-align: center;
+    padding: 0;
+  }
+
+  .ipage .tps ul {
+    padding: 0 10px;
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    text-align: center;
+  }
+
+  .ipage .tps li:nth-child(3n) {
+    width: 34%;
+  }
+
+  .ipage .tps li {
+    width: 33%;
+    display: inline-block;
+  }
+
+  .ipage .tps {
+    padding: 24px 0 10px;
+  }
+
+  .ipage .boxs {
+    margin-top: 20px;
+  }
+
+  .ipage .boxs .bds li {
+    height: 25vw;
+    padding: 45px 30px 0;
+    margin-bottom: 20px;
+    width: calc((100% - 62px) / 3);
+    margin-right: 20px;
+    background-size: 100% 100% !important;
+  }
+
+  .ipage .boxs .bds li h3 a {
+    font-size: 14px;
+  }
+
+  .ipage .boxs .bds li p {
+    line-height: 16px;
+    /* height: 32px; */
+    min-height: 32px;
+    margin: 2px 0;
+  }
+
+  .ipage .boxs .bds li dd a {
+    padding-left: 22px;
+  }
+
+  .ipage .boxs .bds li dd {
+    background-size: 20px auto !important;
+    width: 56px;
+  }
+
+  .ipage .boxs .bds li .pic {
+    width: 60px;
+    height: auto;
+  }
+
+  .masswipban,
+  .makvideo {
+    max-width: initial;
+    margin: 0 30px;
+  }
+
+  .masswipban .icos,
+  .makvideo .icos {
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    top: 10px;
+  }
+
+  .masswipban .banner {
+    height: 30vh;
+  }
+
+  .masswipban .banner .prev,
+  .masswipban .banner .next {
+    width: 25px;
+    height: 25px;
+    margin-top: -17px;
+  }
+
+  .masswipban .banner .spot {
+    width: 60px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .dashboard::before,
+  .adsgg::before,
+  .pool::before,
+  .account::before {
+    height: 20vh;
+  }
+
+  .adsgg .wrap,
+  .pool .wrap,
+  .account .wrap {
+    padding-top: 20px;
+  }
+
+  .pool .box {
+    padding: 30px 10px 0;
+  }
+
+  .pool .box .hd dl {
+    padding: 0 10px;
+  }
+
+  .pool .box .hd dd h6 {
+    font-size: 12px;
+  }
+
+  .pool .box .hd dd h5 span,
+  .pool .box .hd dd h5,
+  .pool .box .hd dd h4 {
+    font-size: 24px;
+  }
+
+  .pool .box .hd dd h4 i {
+    font-size: 12px;
+  }
+
+  .pool .box .txt {
+    margin-top: 10px;
+    display: block;
+  }
+
+  .pool .box .txt .pic,
+  .pool .box .txt .lt {
+    width: auto;
+  }
+
+  .pool .box .txt h5 {
+    font-size: 14px;
+  }
+
+  .pool .box .txt p {
+    font-size: 12px;
+  }
+
+  .pool .box .table h3 {
+    font-size: 14px;
+  }
+
+  .pool .box .table table td,
+  .pool .box .table table th {
+    font-size: 12px;
+  }
+
+  .pool .box .table table td,
+  .pool .box .table table th {
+    max-width: 80px !important;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+
+  .pool .box .table table td {
+    padding: 5px 0;
+    text-align: center;
+  }
+
+  .pool .box .table table td:nth-child(1),
+  .pool .box .table table th:nth-child(1) {
+    padding-left: 6px;
+  }
+
+  .dashboard {
+    padding: 20px 0 60px;
+  }
+
+  .dashboard .box:nth-child(1) {
+    padding: 18px 0;
+  }
+
+  .dashboard .box .hd li h6 {
+    font-size: 12px;
+    height: 40px;
+  }
+
+  .dashboard .box .hd li h4 {
+    font-size: 15px;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .dashboard .box:nth-child(1) .hd li h6:nth-child(1) {
+    height: auto;
+  }
+
+  .dashboard .box {
+    padding: 18px 0 5px;
+  }
+
+  .dashboard .boxs .hd li {
+    width: 50%;
+  }
+
+  .dashboard .boxs .hd li h6 {
+    height: auto;
+  }
+
+  .dashboard .boxs .hd li:nth-child(3n) {
+    width: 50%;
+  }
+
+  .dashboard .boxs .hd li {
+    margin-bottom: 26px;
+  }
+
+  .dashboard .box .table h3 {
+    font-size: 14px;
+  }
+
+  .dashboard .box:nth-child(3) {
+    padding: 14px 10px;
+  }
+
+  .dashboard .box {
+    margin-bottom: 15px;
+  }
+
+  .dashboard .box .table table td,
+  .dashboard .box .table table th {
+    font-size: 12px;
+  }
+
+  .dashboard .box .table table td,
+  .dashboard .box .table table th {
+    max-width: 80px !important;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+
+  .dashboard .box .table table td {
+    padding: 5px 0;
+    text-align: center;
+  }
+
+  .dashboard .box .table table td:nth-child(1),
+  .dashboard .box .table table th:nth-child(1) {
+    padding-left: 6px;
+  }
+
+  .account .box .lt {
+    width: auto;
+    float: none;
+    margin-bottom: 15px;
+  }
+
+  .account .box .lt {
+    height: auto;
+    padding: 18px 0;
+  }
+
+  .account .box .wallet {
+    width: auto;
+    float: none;
+    margin-bottom: 15px;
+  }
+
+  .account .box .wallet {
+    height: auto;
+    padding: 18px 0;
+  }
+
+  .account .box dd h6 {
+    font-size: 12px;
+  }
+
+  .account .boxs dd h4,
+  .account .box dd h4 {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  .account .box .btn {
+    line-height: 36px;
+    margin-top: 20px;
+  }
+
+  .account .box dd span {
+    margin: 0 30px;
+  }
+
+  .account .box .lt:nth-child(2n) {
+    float: none;
+  }
+
+  .account .box .rts dl {
+    margin: 0;
+    padding: 0 30px;
+  }
+
+  .account .box .rts {
+    padding: 30px 0;
+  }
+
+  .account .box .wallet dl {
+    margin: 0;
+    padding: 0 30px;
+  }
+
+  .account .box .wallet {
+    padding: 30px 0;
+    margin-top: 0px;
+  }
+
+  .account .boxs {
+    padding: 20px 0;
+    margin-top: 5px;
+  }
+
+  .account .boxs dl {
+    padding: 0 30px;
+    display: block;
+    overflow: hidden;
+  }
+
+  .account .boxs dd h6 {
+    font-size: 12px;
+  }
+
+  .account .boxs dd {
+    float: left;
+    width: 30%;
+    margin: 10px;
+  }
+
+  .account .boxs dd:nth-child(3) {
+    width: 34%;
+  }
+
+  .account .boxs dd:last-child {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .account .boxs dd .hs {
+    font-size: 14px;
+  }
+
+  .account .boxs dd .t1 {
+    width: 100%;
+  }
+
+  .account .boxs dd .sub {
+    width: 170px;
+    margin: 0 auto;
+  }
+
+  .account .boxs .txt {
+    margin-top: 30px;
+    padding: 0 10px;
+    margin-left: 0;
+  }
+
+  .account .boxs .txt p {
+    font-size: 12px;
+  }
+
+  .adsgg .box {
+    padding: 20px 10px;
+  }
+
+  .adsgg .box .ts h3 {
+    font-size: 16px;
+  }
+
+  .adsgg .box .ts .btn span {
+    font-size: 12px;
+    background-size: 16px auto !important;
+    padding-left: 23px;
+    line-height: 32px;
+  }
+
+  .adsgg .box .ts .btn {
+    width: 108px;
+    height: 32px;
+  }
+
+  .adsgg .box .tps li {
+    width: 48%;
+    margin-right: 0;
+  }
+
+  .adsgg .box .tps ul {
+    justify-content: space-between;
+  }
+
+  .adsgg .box .tps li {
+    font-size: 14px;
+    line-height: 32px;
+  }
+
+  .editwin {
+    margin: 0 30px;
+    width: auto;
+    padding: 20px 10px;
+  }
+
+  .editwin h3 {
+    font-size: 16px;
+  }
+
+  .editwin .ts {
+    margin-top: 10px;
+    padding-bottom: 15px;
+  }
+
+  .editwin .ts li {
+    font-size: 14px;
+    line-height: 2;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    width: calc((100% - 20px) / 2);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+  }
+
+  .editwin .ts li:nth-child(2n) {
+    float: right;
+  }
+
+  .editwin .ts ul {
+    display: block;
+    overflow: hidden;
+  }
+
+  .editwin .bds h4 {
+    font-size: 14px;
+  }
+
+  .editwin .ovs {
+    margin-top: 14px;
+  }
+
+  .editwin .bds .t1 {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .editwin .bds .t2 {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .editwin .bds .btn {
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+
+  .editwin .bds .btn .b1 {
+    width: 80px;
+    line-height: 34px;
+    font-size: 12px;
+    margin-left: 20px;
+  }
+
+  .adsgg .box .bds .table2 {
+    width: 45%;
+    margin-right: 5px;
+  }
+
+  .adsgg .box .bds table td,
+  .adsgg .box .bds table th {
+    font-size: 12px;
+  }
+
+  .adsgg .box .bds .table1 {
+    width: 55%;
+  }
+
+  .pool .box .hd dd.pic {
+    display: none;
+  }
+
+  .pool .box .hd .shpic {
+    display: block;
+    width: 140px;
+    margin: 40px auto 0;
+  }
+
+  .pool .box .hd .shpic img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .pool .box .hd dd {
+    margin: 0 10px;
+  }
+
+  .hhpage::before {
+    height: 30vh;
+  }
+
+  .hbanner .txt {
+    text-align: center;
+  }
+
+  .hbanner .wrap {
+    display: block;
+  }
+
+  .hbanner .txt h3 {
+    font-size: 16px;
+  }
+
+  .hbanner .txt h3 i {
+    font-size: 12px;
+  }
+
+  .hbanner .txt h3 br {
+    display: none;
+  }
+
+  .hbanner .txt h6 span {
+    font-size: 12px;
+    line-height: 22px;
+    padding: 0 6px;
+  }
+
+  .hbanner .txt h6.s1 {
+    margin-top: 15px;
+    margin-right: 4px;
+  }
+
+  .hbanner .txt h6 {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .hbanner .txt h6.s3,
+  .hbanner .txt h6.s2 {
+    margin-left: 0;
+  }
+
+  .hbanner .video {
+    margin: 10px auto 0;
+  }
+
+  .ipage {
+    margin-top: 0;
+  }
+
+  .ipage .tps h2 {
+    margin-bottom: 8px;
+  }
+
+  .hbanner .txt {
+    padding-left: 0;
+  }
+
+  .ipage .boxs .bds li h5 {
+    font-size: 12px;
+    top: 0;
+  }
+
+  .childwin {
+    margin: 0 30px;
+    width: auto;
+    padding: 15px 10px;
+  }
+
+  .childwin h3 {
+    font-size: 16px;
+  }
+
+  .childwin .form {
+    margin-top: 10px;
+  }
+
+  .childwin .form .t1 {
+    height: 30px;
+    font-size: 12px;
+    border-radius: 6px;
+    padding: 0 10px;
+  }
+
+  .childwin .form .t2 {
+    height: 50px;
+    padding: 5px 10px;
+  }
+
+  .childwin .btn {
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+
+  .childwin .btn .b1 {
+    width: 80px;
+    line-height: 34px;
+    font-size: 12px;
+    margin-left: 20px;
+  }
+
+  .ipage .boxs .bds li h5 {
+    top: 10px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .ipage .boxs .bds li {
+    width: calc((100% - 10px) / 2);
+    margin-right: 0;
+    height: 43vw;
+    padding: 8vw 5vw 0;
+    margin-bottom: 20px;
+  }
+
+  .ipage .boxs .bds li:nth-child(2n) {
+    float: right;
+  }
+
+  .ipage .boxs .bds li h5 {
+    top: 0;
+  }
+
+  .ipage .boxs .bds li dd {
+    width: 46px;
+  }
+
+  .ipage .boxs .bds li h5 {
+    top: 4px;
+    left: 15px;
+  }
+
+  .account .box dd span {
+    margin: 0 5px;
+  }
+
+  .account .box dd .qm12 {
+    margin: 0 15px;
+  }
+}

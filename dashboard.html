@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="css/slicy.css" />
+	<link rel="stylesheet" href="css/swiper.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+	<link rel="stylesheet" href="js/tooltips/css/tooltips.css" id="skin">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5Y6LQQEQNS"></script>
+	<script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-5Y6LQQEQNS');</script>
+</head>
+
+<body style="background: #fafbfc;">
+	<div class="layout">
+		<div class="header">
+			<div class="wrap">
+				<div class="gh">
+					<a href="javascript:;"></a>
+				</div>
+				<div class="lt">
+					<a href="index.html" class="logo"><img src="images/logo.png"></a>
+					<div class="naver">
+						<ul>
+							<li><a href="index.html">首页</a></li>
+							<li class="on"><a href="dashboard.html">数据</a></li>
+							<li><a href="pool.html">分红池</a></li>
+							<li><a href="ads.html">发布广告</a></li>
+							<li><a href="account.html">我的收益</a></li>
+							<li><a href="https://sunswap.com/#/v2?lang=zh-CN&t0=TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t&t1=TSo7b9eDcnbALh1sqdqkBr6MNgkvQ8EBvX&type=swap" target="_blank">交易</a></li>
+							<li><a href="https://ad-dao.gitbook.io/help/" target="_blank">帮助</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="item">
+					<div class="btn">
+						<div id="btn-connect"> 连接钱包</div>
+						<div id="btn-disconnect" style="display: none;"><span id="selected-account">加载中...</span></div>
+					</div>
+					<div class="icon"><span class="arrow"></span></div>
+				</div>
+			</div>
+			<div class="item-menu">
+				<div class="item-sub add">添加 ADC 到 TronLink</div>
+				<div class="item-sub view"><a href="javascript:void(0);" target="_blank">查看智能合约地址</a></div>
+			</div>
+		</div>
+		<div class="dashboard">
+			<div class="wrap">
+				<div class="box">
+					<div class="hd">
+						<ul>
+							<li>
+								<h6>金库市值 <span id="tooltips_balanceOfUSDT">ⓘ</span></h6>
+								<h4 id="balanceOfUSDT">$-</h4>
+							</li>
+							<li>
+								<h6>分红池 <span id="tooltips_bonusPrizePool">ⓘ</span></h6>
+								<h4 id="bonusPrizePool">-</h4>
+							</li>
+							<li>
+								<h6>ADC价格 <span id="tooltips_tokenPrice">ⓘ</span></h6>
+								<h4 id="tokenPrice">$-</h4>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="box boxs">
+					<div class="hd">
+						<ul>
+							<li>
+								<h6>ADC发行量 <span id="tooltips_totalSupply">ⓘ</span></h6>
+								<h4 id="totalSupply">-</h4>
+							</li>
+							<li>
+								<h6>ADC销毁量 <span id="tooltips_totalBurn">ⓘ</span></h6>
+								<h4 id="totalBurn">-</h4>
+							</li>
+							<li>
+								<h6>ADC质押量 <span id="tooltips_balanceOfContract">ⓘ</span></h6>
+								<h4 id="balanceOfContract">-</h4>
+							</li>
+							<li>
+								<h6>在线广告数 <span id="tooltips_totalad">ⓘ</span></h6>
+								<h4 id="totalad">-</h4>
+							</li>
+							<li>
+								<h6>完成广告数/收益 <span id="tooltips_totalCompleted">ⓘ</span></h6>
+								<h4 id="totalCompleted">-</h4>
+							</li>
+							<li>
+								<h6>分红券(下次分红)/张 <span id="tooltips_totalFunds">ⓘ</span></h6>
+								<h4 id="totalFunds">-</h4>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="box">
+					<div class="table">
+						<h3>近期销毁ADC记录</h3>
+						<table border="0" cellspacing="0" cellpadding="0" class="BurnLog">
+							<tr>
+								<th>地址</th>
+								<th>销毁数量(ADC)</th>
+								<th>销毁时间</th>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/lib/jquery-1.7.2.min.js"></script>
+	<script src="js/lib/swiper.min.js"></script>
+	<script src="js/lib/wow.min.js"></script>
+	<script src="js/toaster/toast.script.js"></script>
+	<script src="js/lib/jToast.js"></script>
+	<script src="js/tooltips/js/jquery.pure.tooltips.js"></script>
+	<script src="js/lib/dayjs.min.js"></script>
+
+	<script type="text/javascript" src="js/tron/TronWeb.js"></script>
+	<script type="text/javascript" src='js/tron/bignumber.min.js'></script>
+	
+	<script type="text/javascript" src="js/tronjs/dashboard.js"></script>
+</body>
+</html>

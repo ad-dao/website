@@ -1,0 +1,479 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "bytes4",
+				"name": "adHash",
+				"type": "bytes4"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_tokenVal",
+				"type": "uint256"
+			}
+		],
+		"name": "adBid",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes4",
+				"name": "adHash",
+				"type": "bytes4"
+			}
+		],
+		"name": "adDelete",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes4",
+				"name": "adHash",
+				"type": "bytes4"
+			}
+		],
+		"name": "adFinish",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_usdtVal",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_language",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_keywords",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_title",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_content",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_url",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_resourceUrl",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_remark",
+				"type": "string"
+			}
+		],
+		"name": "adNew",
+		"outputs": [
+			{
+				"internalType": "bytes4",
+				"name": "",
+				"type": "bytes4"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "bonusGame",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "whetherToEnd",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "endTime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "bonusPrizePool",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "lastPrizePool",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "received",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "maxAddr",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "maxValue",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "endNumOne",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "endNumTwo",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "endNumThree",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes4",
+				"name": "adHash",
+				"type": "bytes4"
+			},
+			{
+				"internalType": "uint256",
+				"name": "typeN",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "value",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "tokenVal",
+				"type": "uint256"
+			}
+		],
+		"name": "modifyAd",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "predictEndGame",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "burn",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Datasets.BonusLog[]",
+				"name": "",
+				"type": "tuple[]"
+			},
+			{
+				"components": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "burn",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Datasets.BonusLog[]",
+				"name": "",
+				"type": "tuple[]"
+			},
+			{
+				"components": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "burn",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Datasets.BonusLog[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "addr",
+				"type": "address"
+			}
+		],
+		"name": "predictWithdrawShare",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "stockCount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "totalAmount",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Datasets.StockIncome",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes4",
+				"name": "adHash",
+				"type": "bytes4"
+			},
+			{
+				"internalType": "uint256",
+				"name": "val",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "tokenVal",
+				"type": "uint256"
+			}
+		],
+		"name": "reviews",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_superiorAddr",
+				"type": "address"
+			}
+		],
+		"name": "setReferrer",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "shareGame",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "whetherToEnd",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "endTime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "totalFunds",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "totalVotes",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "receivedFunds",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "receivedVotes",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "tokenPrice",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "stepCount",
+				"type": "uint256"
+			}
+		],
+		"name": "triggerBonus",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "start",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "count",
+				"type": "uint256"
+			}
+		],
+		"name": "withdrawShare",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]

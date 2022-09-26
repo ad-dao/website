@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head style="position: relative;">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="css/slicy.css" />
+	<link rel="stylesheet" href="css/swiper.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+	<link rel="stylesheet" href="js/toaster/toast.style.css">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5Y6LQQEQNS"></script>
+	<script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-5Y6LQQEQNS');</script>
+</head>
+
+<body style="background: #fafbfc;position: relative;height:100vh">
+	<div class="layout">
+		<div class="header">
+			<div class="wrap">
+				<div class="gh">
+					<a href="javascript:;"></a>
+				</div>
+				<div class="lt">
+					<a href="index.html" class="logo"><img src="images/logo.png"></a>
+					<div class="naver">
+						<ul>
+							<li><a href="index.html">首页</a></li>
+							<li><a href="dashboard.html">数据</a></li>
+							<li><a href="pool.html">分红池</a></li>
+							<li class="on"><a href="ads.html">发布广告</a></li>
+							<li><a href="account.html">我的收益</a></li>
+							<li><a href="https://sunswap.com/#/v2?lang=zh-CN&t0=TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t&t1=TSo7b9eDcnbALh1sqdqkBr6MNgkvQ8EBvX&type=swap" target="_blank">交易</a></li>
+							<li><a href="https://ad-dao.gitbook.io/help/" target="_blank">帮助</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="item">
+					<div class="btn">
+						<div id="btn-connect"> 连接钱包</div>
+						<div id="btn-disconnect" style="display: none;"><span id="selected-account">加载中...</span></div>
+					</div>
+					<div class="icon"><span class="arrow"></span></div>
+				</div>
+			</div>
+			<div class="item-menu">
+				<div class="item-sub add">添加 ADC 到 TronLink</div>
+				<div class="item-sub view"><a href="javascript:void(0);" target="_blank">查看智能合约地址</a></div>
+			</div>
+		</div>
+		<div class="adsgg">
+			<div class="wrap">
+				<div class="box">
+					<div class="ts">
+						<h3>广告管理</h3>
+						<div class="ubt">
+							<a href="javascript:;" class="btn btnbuy"><span>购买ADC</span></a>
+							<a href="javascript:;" class="btn btnadd"><span>广告发布</span></a>
+						</div>
+					</div>
+					<div class="tps">
+						<ul>
+							<li class="btn_getmyadlist on">正在投放</li>
+							<li class="btn_getmyadfinishlist">已结束投放</li>
+						</ul>
+					</div>
+					<div class="ovs">
+						<div class="bds">
+							<div class="table1">
+								<table border="0" cellspacing="0" cellpadding="0" class="table1title1">
+									<tr>
+										<th>哈希值</th>
+										<th>质押ADC</th>
+										<th>近期竞价</th>
+										<th>开始时间</th>
+										<th>开始ADC价格</th>
+										<th>开始USDT</th>
+										<th>关键词</th>
+										<th>标题</th>
+										<th>内容</th>
+										<th>网址</th>
+										<th>资源</th>
+										<th>备注</th>
+										<th>激活网址</th>
+										<th>字体大小</th>
+										<th>字体颜色</th>
+										<th>喜欢｜吐槽</th>
+									</tr>
+								</table>
+							</div>
+							<div class="table2">
+								<table border="0" cellspacing="0" cellpadding="0" class="table1title2">
+									<tr>
+										<th>状态</th>
+										<th>收益估算</th>
+										<th>操作</th>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="bds">
+							<div class="table1">
+								<table border="0" cellspacing="0" cellpadding="0" class="table2title1">
+									<tr>
+										<th>哈希值</th>
+										<th>质押ADC</th>
+										<th>开始时间</th>
+										<th>开始ADC价格</th>
+										<th>开始USDT</th>
+										<th>结束时间</th>
+										<th>结束价格</th>
+										<th>结束USDT</th>
+										<th>关键词</th>
+										<th>标题</th>
+										<th>内容</th>
+										<th>网址</th>
+										<th>资源</th>
+										<th>备注</th>
+										<th>激活网址</th>
+										<th>字体大小</th>
+										<th>字体颜色</th>
+										<th>喜欢｜吐槽</th>
+									</tr>
+								</table>
+							</div>
+							<div class="table2">
+								<table border="0" cellspacing="0" cellpadding="0" class="table2title2">
+									<tr>
+										<th>状态</th>
+										<th>收益估算</th>
+										<th>操作</th>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="txt">
+						<p>免费发布广告，赚取收益！</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="mask"></div>
+
+	<div class="childwin buytoken">
+		<h3>购买ADC</h3>
+		<div class="form">
+			<form action="" method="post">
+				<ul>
+					<li>
+						<h6>ADC价格 $<span class="adcprice">--</span></h6>
+					</li>
+					<li>
+						<h6>ADC余额 <span class="myadc">--</span></h6>
+					</li>
+					<li>
+						<h6>USDT余额 $<span class="myusdt">--</span></h6>
+					</li>
+					<li><input class="t1" type="text" id="buyAmount" value="" placeholder="请输入购买ADC数量" /></li>
+				</ul>
+			</form>
+		</div>
+		<div class="btn">
+			<a href="#" class="b1 quxia">取消</a>
+			<a href="#" class="b1 on" id="buysubmit" style="display: none;">确定</a>
+			<a href="#" class="b1 on" id="approve1">授权</a>
+		</div>
+	</div>
+
+	<div class="childwin">
+		<h3>发布广告</h3>
+		<div class="form">
+			<form action="" method="post">
+				<ul>
+					<li>
+						<h6>USDT余额 $<span class="myusdt">--</span></h6>
+					</li>
+					<li>
+						<input class="t1" type="text" id="_usdt" value="" placeholder="输入USDT数量" />
+						<span class="info">USDT数量越多，收益越高，可随时提出来</span>
+					</li>
+					<li>
+						<input disabled class="t1" type="text" id="_token" value="" placeholder="预计兑换ADC数量" />
+						<span class="info">USDT兑换ADC并质押，结束广告时自动返还USDT</span>
+					</li>
+					<li>
+						<input class="t1" type="text" id="_keywords" value="" placeholder="输入关键词" maxlength=15 />
+						<span class="info">请使用1个简短关键词，热门关键词排名靠前</span>
+					</li>
+					<li>
+						<input class="t1" type="text" id="_title" value="" placeholder="输入广告标题" maxlength=30 />
+						<span class="info">标题最长30个字符</span>
+					</li>
+					<li>
+						<textarea class="t1 t2" rows="" cols="" id="_content" placeholder="输入广告内容" maxlength=140></textarea>
+						<span class="info">内容最长140个字符</span>
+					</li>
+					<li>
+						<input class="t1" type="text" id="_url" value="" placeholder="输入广告网址" />
+						<span class="info">网址以http开关</span>
+					</li>
+					<li>
+						<input class="t1" type="text" id="_resourceUrl" value="" placeholder="输入图片或视频链接 如 .jpg .png .mp4 .mpeg 等等" />
+						<span class="info">填写图片或视频文件地址，或留空</span>
+					</li>
+				</ul>
+			</form>
+		</div>
+		<div class="btn">
+			<a href="javascript:void(0);" class="b1 quxia">取消</a>
+			<a href="javascript:void(0);" class="b1 on" id="newsubmit" style="display: none;">确定</a>
+			<a href="javascript:void(0);" class="b1 on" id="approve2">授权</a>
+		</div>
+	</div>
+
+	<div class="editwin">
+		<h3>编辑广告</h3>
+		<div class="ts">
+			<ul>
+				<li value="1">状态</li>
+				<li value="2">关键词</li>
+				<li value="3">标题</li>
+				<li value="4">内容</li>
+				<li value="5">网址</li>
+				<li value="6">图片/视频</li>
+				<li value="7">备注</li>
+				<li value="8">激活链接</li>
+				<li value="9">字体大小</li>
+				<li value="10">字体颜色</li>
+				<li value="11">竞价排名</li>
+				<li value="12">结束投放</li>
+			</ul>
+		</div>
+		<div class="ovs">
+			<div class="bds">
+				<h6>ADC价格 $<span class="adcprice">--</span><br>ADC余额 <span class="mytoken">--</span></h6>
+				<h4 class="subtitle" style="display:none">修改</h4>
+				<input class="t1 val" placeholder="" style="height:50px;display:none" maxlength=140></input>
+				<div class="testswitch" style="display:none">
+					<input class="testswitch-checkbox" id="onoffswitch" type="checkbox">
+					<label class="testswitch-label" for="onoffswitch">
+						<span class="testswitch-inner" data-on="ON" data-off="OFF"></span>
+						<span class="testswitch-switch"></span>
+					</label>
+				</div>
+				<div class="ziti" style="display:none">
+					<div style="display: flex;align-items: center;">
+						<div class="modifyfontsize on">字体减小</div>
+						<div class="modifyfontsize">字体增大</div>
+					</div>
+				</div>
+				<input class="t1 fontColor" type="text" value="" data-jscolor="{}" style="height:50px;display:none" />
+				<h4 class="msg" style="display:none"></h4>
+				<input type="number" class="t2 token" placeholder="请输入销毁ADC数量" style="height:50px;display:none"></input>
+				<div class="btn">
+					<div class="b1 quxia">取消</div>
+					<div class="b1 on btn_edit" style="display:none">确定</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/lib/jquery-1.7.2.min.js"></script>
+	<script src="js/lib/swiper.min.js"></script>
+	<script src="js/lib/wow.min.js"></script>
+	<script src="js/toaster/toast.script.js"></script>
+	<script src="js/lib/jToast.js"></script>
+	<script src="js/lib/dayjs.min.js"></script>
+	<script src="js/lib/jscolor.min.js"></script>
+
+	<script type="text/javascript" src="js/tron/TronWeb.js"></script>
+	<script type="text/javascript" src='js/tron/bignumber.min.js'></script>
+	
+	<script type="text/javascript" src="js/tronjs/ads.js"></script>
+</body>
+
+</html>

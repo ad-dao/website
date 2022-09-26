@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="css/slicy.css" />
+	<link rel="stylesheet" href="css/swiper.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+	<link rel="stylesheet" href="js/toaster/toast.style.css">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5Y6LQQEQNS"></script>
+	<script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-5Y6LQQEQNS');</script>
+</head>
+
+<body style="background: #fafbfc;">
+	<div class="layout">
+		<div class="header">
+			<div class="wrap">
+				<div class="gh">
+					<a href="javascript:;"></a>
+				</div>
+				<div class="lt">
+					<a href="index.html" class="logo"><img src="images/logo.png"></a>
+					<div class="naver">
+						<ul>
+							<li><a href="index.html">首页</a></li>
+							<li><a href="dashboard.html">数据</a></li>
+							<li class="on"><a href="pool.html">分红池</a></li>
+							<li><a href="ads.html">发布广告</a></li>
+							<li><a href="account.html">我的收益</a></li>
+							<li><a href="https://sunswap.com/#/v2?lang=zh-CN&t0=TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t&t1=TSo7b9eDcnbALh1sqdqkBr6MNgkvQ8EBvX&type=swap" target="_blank">交易</a></li>
+							<li><a href="https://ad-dao.gitbook.io/help/" target="_blank">帮助</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="item">
+					<div class="btn">
+						<div id="btn-connect"> 连接钱包</div>
+						<div id="btn-disconnect" style="display: none;"><span id="selected-account">加载中...</span></div>
+					</div>
+					<div class="icon"><span class="arrow"></span></div>
+				</div>
+			</div>
+			<div class="item-menu">
+				<div class="item-sub add">添加 ADC 到 TronLink</div>
+				<div class="item-sub view"><a href="javascript:void(0);" target="_blank">查看智能合约地址</a></div>
+			</div>
+		</div>
+		<div class="pool">
+			<div class="wrap">
+				<div class="box">
+					<div class="hd" style="display: none;">
+						<dl>
+							<dd>
+								<h6>分红池金额</h6>
+								<h4>
+									<!-- <span class="bonusPrizePoolToken">--</span><i>ADC</i>
+									 ≈  -->
+									<span class="bonusPrizePoolUSDT">--</span><i>USDT</i>
+								</h4>
+							</dd>
+							<dd class="viewTime" style="display: none;">
+								<h6>分红倒计时</h6>
+								<h5 class="countdown"><span>--</span></h5>
+							</dd>
+							<dd class="pic viewBtn">
+								<h5><img src="images/qm14.png"></h5>
+							</dd>
+						</dl>
+						<div class="shpic viewBtn">
+							<img src="images/qm14.png">
+						</div>
+					</div>
+					<div class="txt">
+						<div class="lt">
+							<h5>分红池规则：</h5>
+							<p>
+								一.每笔销毁ADC的10%进入分红池，销毁ADC的方式有竞价排名、修改广告、点评广告等<br />
+								二.分红池单笔新增1美元，倒计时将延长1小时，最长延长到48小时<br />
+								三.当倒计时结束时没有任何销毁ADC行为，则任意用户都可以触发分红机制<br />
+								四.分红分配规则：<br />
+								&nbsp;&nbsp;1.最后300笔中单笔销毁ADC最多的地址独享30%金额<br />
+								&nbsp;&nbsp;2.最后3笔销毁ADC地址瓜分30%金额<br />
+								&nbsp;&nbsp;3.最后第4~300笔销毁ADC地址均分30%金额<br />
+								&nbsp;&nbsp;4.剩下的10%留沉，用作下一次分红<br />
+								五.预计分红名单及金额见下方列表（实时更新）
+							</p>
+						</div>
+						<div class="pic">
+							<!-- <img src="images/qm13.png"> -->
+						</div>
+					</div>
+				</div>
+
+				<div class="box list">
+					<div class="table">
+						<h3>目前单笔销毁ADC最多的地址(实时数据)</h3>
+						<table border="0" cellspacing="0" cellpadding="0" class="Two">
+							<tr>
+								<th>地址</th>
+								<th>最大销毁(ADC)</th>
+								<th>预计分红(USDT)</th>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+				<div class="box list">
+					<div class="table">
+						<h3>目前最后3笔销毁ADC地址(实时数据)</h3>
+						<table border="0" cellspacing="0" cellpadding="0" class="One">
+							<tr>
+								<th>地址</th>
+								<th>预计分红(ADC)</th>
+								<th>换算资产(USDT)</th>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+				<div class="box list">
+					<div class="table">
+						<h3>目前最后第4~300笔销毁ADC地址(实时数据)</h3>
+						<table border="0" cellspacing="0" cellpadding="0" class="Three">
+							<tr>
+								<th>地址</th>
+								<th>预计分红(ADC)</th>
+								<th>换算资产(USDT)</th>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/lib/jquery-1.7.2.min.js"></script>
+	<script src="js/lib/swiper.min.js"></script>
+	<script src="js/lib/wow.min.js"></script>
+	<script src="js/toaster/toast.script.js"></script>
+	<script src="js/lib/jToast.js"></script>
+
+	<script type="text/javascript" src="js/tron/TronWeb.js"></script>
+	<script type="text/javascript" src='js/tron/bignumber.min.js'></script>
+
+	<script type="text/javascript" src="js/tronjs/pool.js"></script>
+</body>
+</html>
